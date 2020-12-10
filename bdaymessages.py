@@ -67,10 +67,11 @@ while True:
 chropt = webdriver.ChromeOptions()
 
 # adding userdata argument to ChromeOptions object
-# chropt.add_argument("user-data-<LOCATION TO YOUR CHROME USER DATA>")
+chropt.add_argument(
+    "user-data-/Users/jasonbeedle/Library/Application Support/Google/Chrome/Default")
 
 # Creating a Chrome webdriver object
-driver = webdriver.Chrome(executable_path="file:///Users/jasonbeedle/Desktop/tictactoe/chromedriver",
+driver = webdriver.Chrome(executable_path="/Users/jasonbeedle/Desktop/bdayMessages/chromedriver",
                           options=chropt)
 driver.get("https://web.whatsapp.com/")
 
